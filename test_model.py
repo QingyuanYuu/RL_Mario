@@ -8,7 +8,7 @@ from gym_super_mario_bros.actions import SIMPLE_MOVEMENT
 env = gym_super_mario_bros.make('SuperMarioBros-v2')
 env = JoypadSpace(env, SIMPLE_MOVEMENT)
 
-model_dir = "ppo_mario.zip"
+model_dir = "best_model/best_model.zip"
 model = PPO.load(model_dir, evn=env)
 
 obs = env.reset()
