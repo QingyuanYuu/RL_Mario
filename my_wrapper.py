@@ -4,7 +4,6 @@ import gym_super_mario_bros
 from gym_super_mario_bros.actions import SIMPLE_MOVEMENT
 from gym.wrappers import GrayScaleObservation, ResizeObservation
 import matplotlib.pyplot as plt
-from my_wrapper import SkipFrameWrapper
 
 
 class SkipFrameWrapper(gym.Wrapper):
