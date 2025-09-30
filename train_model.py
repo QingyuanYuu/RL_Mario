@@ -11,6 +11,7 @@ from test_obs import make_env
 from stable_baselines3.common.vec_env import SubprocVecEnv, VecFrameStack
 from stable_baselines3.common.callbacks import EvalCallback
 
+
 #create environment for Mario
 def linear_schedule(initial_value: float, final_value: float = 0.) :
     def func(progress_remaining: float) -> float:
